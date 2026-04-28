@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Penutup ❤️</title>
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: Arial;
+      background: linear-gradient(135deg, #ffc2d1, #ffe5ec);
+      min-height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.9);
+      width: 100%;
+      max-width: 360px;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      animation: fadeIn 1s ease;
+    }
+
+    h2 {
+      color: #ff4d6d;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .laugh {
+      font-size: 40px;
+      animation: shake 0.5s infinite;
+      margin-top: 10px;
+    }
+
+    @keyframes shake {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      50% { transform: rotate(-5deg); }
+      75% { transform: rotate(5deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 12px;
+      border: none;
+      border-radius: 12px;
+      background: #ff4d6d;
+      color: white;
+      cursor: pointer;
+    }
+
+    a {
+      display: block;
+      margin-top: 10px;
+      color: #ff4d6d;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from { opacity:0; transform:translateY(20px); }
+      to { opacity:1; transform:translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <audio id="music" loop>
+    <source src="musik.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="card">
+    <h2>Terakhir nih 😆</h2>
+
+    <p>
+      Jangan lupa senyum ya Amengggg Kecillll 😂❤️<br><br>
+      Kamu itu spesial buat akuu✨<br><br>
+      Aku selalu dukung kamu dan selalu ada dimanapun kamu berada 💕
+    </p>
+
+    <div class="laugh">😂😂😂</div>
+
+    <p><b>Dibuat dengan ❤️ oleh Rangga</b></p>
+
+    <button onclick="document.getElementById('music').play()">
+      Putar Musik 🎵
+    </button>
+
+    <a href="index.html">Ulang Lagi 🔁</a>
+  </div>
+
+</body>
+</html>
